@@ -1,0 +1,332 @@
+body h1, h2, h3, h4, form, li {
+  font-family: 'nunito sans';
+}
+
+body p, button, input, textarea, .form-error {
+  font-family: 'space mono';
+}
+
+body a {
+  font-family: 'space mono';
+  border-bottom: 1px solid #e28c6a;
+  color: black;
+  text-decoration: none;
+}
+
+body button { 
+  background: white;
+  border: 1px solid black;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #cfebf2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-icon {
+  max-width: 25px;
+  float: left;
+  text-align: center;
+  padding: 9px 13px 9px 9px;
+  margin-left: 15px;
+}
+
+.nav-link {
+  float: left;
+  text-align: center;
+  padding: 10px 12px 10px 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: none;
+}
+
+.nav-login {
+  float: right;
+  text-align: center;
+  max-height: 24px;
+  margin: 10px 24px 0 0;
+  border: 1px solid #493d37;
+  color: black;
+  background-color: white;
+}
+
+.home-menu {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.home-menu h1 {
+  font-size: 65px;
+  z-index: 1;
+  color: #493d37;
+  margin-left: 5px;
+}
+
+.home-icon {
+  max-width: 150px;
+  margin-top: -85px;
+  z-index: -1;
+  position: relative;
+}
+
+.stream-list {
+  margin: 20px 15px 15px 15px;
+  padding: 10px;
+}
+
+.stream-list h1 {
+  font-size: 40px;
+}
+
+.stream-list button {
+  background: white;
+  max-height: 24px;
+}
+
+.stream-list a {
+  border-bottom: none;
+}
+
+.list-link u {
+  text-decoration-color: #e28c6a;
+  text-decoration-thickness: 2px;
+  font-size: 22px;
+}
+
+.list-link b {
+  font-size: 80%;
+}
+
+.list-chunk {
+  margin-bottom: 25px;
+}
+
+.thumbnail-chunk {
+  display: flex;
+  max-width: 95vw;
+}
+
+.thumbnail-chunk p {
+  padding: 0 15px 0 15px;
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+.thumbnail {
+  max-width: 400px;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+.list-buttons {
+  padding: 5px 5px 5px 0;
+}
+
+.create-form {
+  margin: 20px 15px 15px 15px;
+  padding: 10px;
+}
+
+.create-form h1 {
+  font-size: 40px;
+}
+
+.form-unit {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px 0;
+}
+
+.form-unit input {
+  min-height: 25px;
+}
+
+.create-description {
+  min-height: 200px;
+}
+
+.form-error {
+  color: #d07f06;
+  font-size: 12px;
+}
+
+.faq {
+  margin: 20px 15px 15px 15px;
+  padding: 10px;
+}
+
+.faq h1 {
+  font-size: 40px;
+}
+
+.faq li {
+  margin: 0 20px 10px 0;
+}
+
+.faq em {
+  font-size: 18px;
+  padding: 5px 5px 10px 0px;
+}
+
+.faq a {
+  font-size: 14px;
+}
+
+.stream-display {
+  margin: 30px 15px 15px 15px;
+  padding: 10px;
+}
+
+.stream-display p {
+  font-size: 14px;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.modal {
+  background-color: rgb(222, 222, 222, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  z-index: 2;
+  padding: 20px;
+  border: 3px solid #6ad1e2;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 60px;
+  color: #493d37;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  vertical-align: 10%;
+}
+
+@media only screen and (max-width: 675px) {
+  .thumbnail-chunk {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .thumbnail-chunk p {
+    padding: 10px 5px 5px 5px;
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  .thumbnail-chunk p {
+    padding: 10px 5px 5px 5px;
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  .list-buttons {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .web-title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: inline-block;
+    margin-bottom: -20px;
+  }
+
+  .thumbnail-chunk p {
+    padding: 10px 5px 5px 5px;
+    font-size: 13px;
+    margin-top: -5px;
+  }
+
+  .thumbnail {
+    max-width: 300px;
+  }
+
+  .list-buttons {
+    margin-left: 5px;
+  }
+
+  .home-menu h1 {
+    font-size: 55px;
+  }
+
+  .blinking-cursor {
+    font-size: 48px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+}
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #493d37;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #493d37;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #493d37;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #493d37;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #493d37;
+    }
+  }
+
+
